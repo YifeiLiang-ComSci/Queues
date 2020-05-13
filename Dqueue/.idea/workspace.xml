@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1e4f978-b3bd-4ae1-84e9-9e1170bce808" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Deque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Permutation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RandomizedQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Algorithms, Part I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Algorithms, Part I.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deque$DequeIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Deque$DequeIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deque$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/Deque$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deque.class" beforeDir="false" afterPath="$PROJECT_DIR$/Deque.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/Deque.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +60,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Permutation">
     <configuration name="Deque" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="14" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -66,8 +70,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Permutation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="14" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Permutation" />
+      <module name="Algorithms, Part I" />
+      <option name="PROGRAM_PARAMETERS" value="3" />
+      <option name="REDIRECT_INPUT" value="true" />
+      <option name="INPUT_FILE" value="distinct.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RandomizedQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="14" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="RandomizedQueue" />
+      <module name="Algorithms, Part I" />
+      <option name="PROGRAM_PARAMETERS" value="3 &lt; distinct.txt" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Deque" />
+      <item itemvalue="Application.RandomizedQueue" />
+      <item itemvalue="Application.Permutation" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Permutation" />
+        <item itemvalue="Application.RandomizedQueue" />
         <item itemvalue="Application.Deque" />
       </list>
     </recent_temporary>
@@ -81,7 +114,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1589312774595</updated>
-      <workItem from="1589312783361" duration="6340000" />
+      <workItem from="1589312783361" duration="16111000" />
+      <workItem from="1589400709108" duration="3385000" />
+      <workItem from="1589404451188" duration="3000000" />
     </task>
     <servers />
   </component>
@@ -98,30 +133,30 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="165" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589336268748">
+    <state x="165" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589409991993">
       <screen x="0" y="23" width="1401" height="877" />
     </state>
-    <state x="165" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1401.877@0.23.1401.877" timestamp="1589336268748" />
-    <state x="512" y="175" key="#com.intellij.ide.util.MemberChooser" timestamp="1589334412299">
+    <state x="165" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1401.877@0.23.1401.877" timestamp="1589409991993" />
+    <state x="512" y="175" key="#com.intellij.ide.util.MemberChooser" timestamp="1589350200699">
       <screen x="0" y="23" width="1401" height="877" />
     </state>
-    <state x="512" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1401.877@0.23.1401.877" timestamp="1589334412299" />
-    <state width="1359" height="231" key="GridCell.Tab.0.bottom" timestamp="1589336845301">
+    <state x="512" y="175" key="#com.intellij.ide.util.MemberChooser/0.23.1401.877@0.23.1401.877" timestamp="1589350200699" />
+    <state width="1359" height="231" key="GridCell.Tab.0.bottom" timestamp="1589410060435">
       <screen x="0" y="23" width="1401" height="877" />
     </state>
-    <state width="1359" height="231" key="GridCell.Tab.0.bottom/0.23.1401.877@0.23.1401.877" timestamp="1589336845301" />
-    <state width="1359" height="231" key="GridCell.Tab.0.center" timestamp="1589336845300">
+    <state width="1359" height="231" key="GridCell.Tab.0.bottom/0.23.1401.877@0.23.1401.877" timestamp="1589410060435" />
+    <state width="1359" height="231" key="GridCell.Tab.0.center" timestamp="1589410060434">
       <screen x="0" y="23" width="1401" height="877" />
     </state>
-    <state width="1359" height="231" key="GridCell.Tab.0.center/0.23.1401.877@0.23.1401.877" timestamp="1589336845300" />
-    <state width="1359" height="231" key="GridCell.Tab.0.left" timestamp="1589336845300">
+    <state width="1359" height="231" key="GridCell.Tab.0.center/0.23.1401.877@0.23.1401.877" timestamp="1589410060434" />
+    <state width="1359" height="231" key="GridCell.Tab.0.left" timestamp="1589410060434">
       <screen x="0" y="23" width="1401" height="877" />
     </state>
-    <state width="1359" height="231" key="GridCell.Tab.0.left/0.23.1401.877@0.23.1401.877" timestamp="1589336845300" />
-    <state width="1359" height="231" key="GridCell.Tab.0.right" timestamp="1589336845301">
+    <state width="1359" height="231" key="GridCell.Tab.0.left/0.23.1401.877@0.23.1401.877" timestamp="1589410060434" />
+    <state width="1359" height="231" key="GridCell.Tab.0.right" timestamp="1589410060435">
       <screen x="0" y="23" width="1401" height="877" />
     </state>
-    <state width="1359" height="231" key="GridCell.Tab.0.right/0.23.1401.877@0.23.1401.877" timestamp="1589336845301" />
+    <state width="1359" height="231" key="GridCell.Tab.0.right/0.23.1401.877@0.23.1401.877" timestamp="1589410060435" />
     <state x="188" y="43" key="SettingsEditor" timestamp="1589312875386">
       <screen x="0" y="23" width="1401" height="877" />
     </state>

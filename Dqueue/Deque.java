@@ -81,10 +81,16 @@ public class Deque<Item> implements Iterable<Item> {
            throw new java.util.NoSuchElementException();
         }
         Item item = head.data;
-        head = head.next;
-        head.previous = null;
+        if (head.equals(tail)) {
+            tail = null;
+            head = null;
+        } else {
 
 
+            head = head.next;
+            head.previous = null;
+        }
+        size--;
         return item;
 
 
@@ -98,10 +104,16 @@ public class Deque<Item> implements Iterable<Item> {
             throw new java.util.NoSuchElementException();
         }
         Item item = tail.data;
-        //System.out.println("run "+tail.previous.data);
-        tail = tail.previous;
-        tail.next = null;
+        if (head.equals(tail))
+        {
+            tail = null;
+            head = null;
+        } else {
+            tail = tail.previous;
+            tail.next = null;
 
+        }
+        size--;
         return item;
     }
 
@@ -121,10 +133,17 @@ public class Deque<Item> implements Iterable<Item> {
         }
 
         public Item next() {
+            if (!hasNext())
+            {
+                throw new java.util.NoSuchElementException();
+            }
             Item temp = current.data;
             current = current.next;
             return temp;
 
+        }
+        public void remove() {
+            throw new UnsupportedOperationException();
         }
     }
 
@@ -146,18 +165,12 @@ public class Deque<Item> implements Iterable<Item> {
         int size = 100;
         Deque<Integer> que = new Deque<>();
 
-        for (int i = 0; i < size; i++)
-        {
-            que.addFirst(i);
-        }
-        que.removeFirst();
+
+        que.addFirst(1);
+        que.addFirst(2);
+
         que.removeLast();
         que.removeFirst();
-        que.removeLast();
-        for (int x:que)
-        {
-            System.out.println(x);
-        }
     }
 
 }
